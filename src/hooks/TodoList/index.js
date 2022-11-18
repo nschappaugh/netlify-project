@@ -8,6 +8,7 @@ function TodoList() {
     const addTodo = () => {
         let prevTodos = todos;
         prevTodos.push(currentTodo);
+        setTodos (prevTodos);
         setCurrentTodo('');
     }
 
